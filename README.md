@@ -11,6 +11,15 @@ modules="org/godotengine/godot/SQLBridge"
 
 var sqlbridge = Globals.get_singleton("SQLBridge")
 
+sqlbridge.setBool("key", True/False) 
+sqlbridge.getBool("key") // returns bool
+
+sqlbridge.setInt("key", Int)
+sqlbridge.getInt("key") // returns int
+
+sqlbridge.setFloat("key", Float)
+sqlbridge.getFloat("key") // returns float
+
 sqlbridge.setValue("key", "value") // set { key = value }.
 sqlbridge.getValue("key") // returns String.
 
